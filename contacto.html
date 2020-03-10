@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Contacto</title>
+        <link rel='stylesheet'href='styles/style.css'>
+    </head>
+    <body>
+        <header>
+            <h1 id='top'> Elvira Linera</h1>
+            <h2> Diseñadora Web para un mundo más verde </h2>
+            <nav>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='curriculum.html'>Currículum:</a></li>
+                    <li><a href='competencias.html'>Competencias Digitales:</a></li>
+                    <li><a href='contacto.html'>Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <div id="contact">
+                <form method='get'action='procesar.php'>
+                    <fieldset>
+                        <legend>Formulario de contacto:</legend>
+                        <!-- input tipo text -->
+                        <div>
+                            <label for='nombre'> Escribe tu nombre</label>
+                            <input/ type='text'id='nombre' name='nombre'> 
+                        </div>
+                        
+                        <div>
+                            <label for='email'>E-mail</label>
+                            <input type="email" id='email'>
+                        </div>
+                        <!-- elemento multilínea, text area -->
+                        <div>
+                            <label for='asunto'>Asunto</label>
+                            <textarea id='asunto' name='asunto' placeholder='indica el asunto de tu mensaje'></textarea>
+                        </div>
+                        <!-- formulariode selección múltiple -->
+                        <div>
+                            <p>Indica qué servicios que te interesan</p>
+                            <div>
+                                <label for='asesoria'>Educación Ambiental</label>
+                                <input id='asesoría' type='radio' name='services' value='asesoria'>
+                            </div>
+                            <div>
+                                <label for='diseño'>Diseño Web</label>
+                                <input id='diseño' type='radio' name='services' value='diseño'>
+                            </div>
+                            <div>
+                                <label for='ambos'>Ambos</label>
+                                <input id='ambos' type='radio' name='services' value='ambos'>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button type='submit'>Enviar mensaje</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+   
+        <footer><a href='#top'>Ir Arriba</a></footer>
+    </body>
+</html>
